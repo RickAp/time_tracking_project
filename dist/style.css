@@ -1,0 +1,178 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  font-size: 1.125rem;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  width: 70%;
+  margin: 100px auto;
+  gap: 30px;
+}
+
+.card__profile {
+  grid-row: span 2;
+  background-color: #5847eb;
+  border-radius: 12px;
+  position: relative;
+}
+
+.card__pic {
+  width: 140px;
+  padding: 30px;
+}
+
+.card__report {
+  color: #bdc1ff;
+  font-size: 0.9rem;
+  padding-left: 30px;
+}
+
+.card__name {
+  color: white;
+  padding-left: 30px;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 36px;
+  margin-right: 20px;
+}
+
+.card__modes {
+  background-color: #1c1f4a;
+  position: absolute;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 150px;
+  display: inline-block;
+}
+
+.card__list {
+  list-style-type: none;
+}
+
+.card__days {
+  padding: 5px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: #6f76c8;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.card__link--selected {
+  color: white;
+}
+
+.card__link:hover {
+  opacity: 0.5;
+}
+
+.card__item {
+  background-color: #1c1f4a;
+  border-radius: 12px;
+  position: relative;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.card__item:hover {
+  opacity: 0.5;
+}
+
+.card__image {
+  background-color: #ff8c66;
+  margin-top: -30px;
+  position: absolute;
+  width: 100%;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card__image--play {
+  background-color: #56c2e6;
+}
+
+.card__image--study {
+  background-color: #ff5c7c;
+}
+
+.card__image--exercise {
+  background-color: #4acf81;
+}
+
+.card__image--social {
+  background-color: #7536d3;
+}
+
+.card__image--sc {
+  background-color: #f1c65b;
+}
+
+.card__img {
+  height: 40px;
+  padding-right: 15px;
+}
+
+.card__title {
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card__ellipsis {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card__content {
+  color: white;
+  font-weight: 300;
+  font-size: 45px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.card__previous {
+  color: #bdc1ff;
+  font-size: 0.9rem;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */

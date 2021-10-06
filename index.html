@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  
+</head>
+<body>
+
+  <section class="cards">
+
+    <div class="card">
+      <div class="card__profile">
+        <img src="/images/image-jeremy.png" alt="Jeremy" class="card__pic">
+        <div class="card__report">Report for</div>
+        <div class="card__name">Jeremy Robson</div>
+        <div class="card__modes">
+          <ul class="card__list">
+            <li class="card__days"><a href="#" class="card__link" id="daily">Daily</a></li>
+            <li class="card__days"><a href="#" class="card__link card__link--selected" id="weekly">Weekly</a> </li>
+            <li class="card__days"><a href="#" class="card__link" id="monthly">Monthly</a> </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__image"><img src="/images/icon-work.svg" alt="Work" class="card__img"></div>
+        <div class="card__title">Work <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card__ellipsis"></div>
+        <div class="card__content" id="cardOne">32hrs</div>
+        <div class="card__previous" id="subCardOne">Previous - 36hrs</div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__image card__image--play"><img src="/images/icon-play.svg" alt="Play" class="card__img"></div>
+        <div class="card__title">Play <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card__ellipsis"></div>
+        <div class="card__content" id="cardTwo">10hrs</div>
+        <div class="card__previous" id="subCardTwo">Previous - 8hrs</div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__image card__image--study"><img src="/images/icon-study.svg" alt="Study" class="card__img"></div>
+        <div class="card__title">Study <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card__ellipsis"></div>
+        <div class="card__content" id="cardThree">4hrs</div>
+        <div class="card__previous" id="subCardThree">Previous - 7hrs</div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__image card__image--exercise"><img src="/images/icon-exercise.svg" alt="Exercise" class="card__img"></div>
+        <div class="card__title">Exercise <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card__ellipsis"></div>
+        <div class="card__content" id="cardFour">4hrs</div>
+        <div class="card__previous" id="subCardFour">Previous - 5hrs</div>
+      </div>
+
+      <div class="card__item">
+        <div class="card__image card__image--social"><img src="/images/icon-social.svg" alt="Social" class="card__img"></div>
+        <div class="card__title">Social <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card__ellipsis"></div>
+        <div class="card__content" id="cardFive">5hrs</div>
+        <div class="card__previous" id="subCardFive">Previous - 10hrs</div>
+      </div>
+      
+      <div class="card__item">
+        <div class="card__image card__image--sc"><img src="/images/icon-self-care.svg" alt="Self-Care" class="card__img"></div>
+        <div class="card__title">Self Care <img src="/images/icon-ellipsis.svg" alt="ellipsis" class="card__ellipsis"></div>
+        <div class="card__content" id="cardSix">2hrs</div>
+        <div class="card__previous" id="subCardSix">Previous - 2hrs</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="app/js/script.js"></script>
+
+</body>
+</html>

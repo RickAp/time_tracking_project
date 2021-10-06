@@ -1,0 +1,157 @@
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 70%;
+    margin: 100px auto;
+    gap: 30px;
+    
+    
+    
+
+    &__profile{
+        grid-row: span 2;
+        background-color: $blue;
+        border-radius: 12px;
+        position: relative;
+    }
+
+    &__pic{
+        width: 140px;
+        padding: 30px;
+        
+    }
+    
+
+    &__report{
+        color: $paleBlue;
+        font-size: 0.9rem;
+        padding-left: 30px;
+    }
+
+    &__name{
+        color: white;
+        padding-left: 30px;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 36px;
+        margin-right: 20px;
+    }
+
+    &__modes{
+        background-color: $darkBlue;
+        position: absolute;
+        width: 100%;
+        border-radius: 12px;
+        margin-top: 150px;
+        display: inline-block;
+        
+        
+    }
+
+    &__list{
+        list-style-type: none;
+    }
+
+    &__days{
+        padding: 5px;
+        
+    }
+
+    &__link{
+        text-decoration: none;
+        color:  $desaturedBlue;
+        transition: opacity 200ms ease-in-out;
+
+        &--selected{
+            color: white;
+        }
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    &__item{
+        background-color: $darkBlue;
+        border-radius: 12px;
+        position: relative;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: opacity 250ms ease-in-out;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    &__image{
+        background-color: hsl(15, 100%, 70%);
+        margin-top: -30px;
+        position: absolute;
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        justify-content: end;
+
+        &--play{
+            background-color: $softBlue;
+        }
+
+        &--study{
+            background-color: $lightRed;
+        }
+
+        &--exercise{
+            background-color: $limeGreen;
+        }
+
+        &--social{
+            background-color: $violet;
+        }
+
+        &--sc{
+            background-color: $softOrange;
+        }
+    }
+
+    &__img{
+        height: 40px;
+        padding-right: 15px;
+    }
+
+    &__title{
+        color: white;
+        font-weight: 500;
+        font-size: 0.9rem;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    
+    &__ellipsis{
+        align-self: center;
+
+    }
+
+    &__content{
+        color: white;
+        font-weight: 300;
+        font-size: 45px;
+        padding-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__previous{
+        color: $paleBlue;
+        font-size: 0.9rem;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    
+
+    
+}
+
